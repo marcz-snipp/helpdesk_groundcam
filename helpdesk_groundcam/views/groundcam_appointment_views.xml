@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="groundcam_appointment_view_form" model="ir.ui.view">
+        <field name="name">groundcam.appointment.form</field>
+        <field name="model">groundcam.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Video Appointment" create="false">
+                <header>
+                    <button name="action_open_reschedule_wizard" type="object"
+                        string="Reschedule" icon="fa-calendar"
+                        invisible="status in ('completed', 'cancelled') or lobby_id"/>
+                    <button name="action_cancel_appointment" type="object"
+                        string="Cancel Appointment" icon="fa-times"
+                        confirm="Cancel this appointment? This cannot be undone."
+                        invisible="status in ('completed', 'cancelled')"/>
+                    <field name="status" widget="statusbar"
+                        statusbar_visible="scheduled,notified,lobby_created,completed"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group string="Appointment Info">
+                            <field name="groundcam_id"/>
+                            <field name="mode"/>
+                            <field name="ticket_id"/>
+                            <field name="user_id"/>
+                            <field name="scheduled_at"/>
+                            <field name="duration_minutes"/>
+                            <field name="notify_by"/>
+                            <field name="crm_id"/>
+                        </group>
+                        <group string="Participants">
+                            <field name="agent_name"/>
+                            <field name="agent_groundcam_id"/>
+                            <field name="client_name"/>
+                            <field name="client_phone"/>
+                            <field name="client_email"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Status">
+                            <field name="lobby_id"/>
+                            <field name="cancellation_reason"/>
+                        </group>
+                    </group>
+                    <group string="Notes">
+                        <field name="notes" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="groundcam_appointment_view_list" model="ir.ui.view">
+        <field name="name">groundcam.appointment.list</field>
+        <field name="model">groundcam.appointment</field>
+        <field name="arch" type="xml">
+            <list string="Video Appointments" create="false">
+                <field name="groundcam_id" string="Appointment"/>
+                <field name="ticket_id"/>
+                <field name="status" widget="badge"
+                    decoration-info="status == 'scheduled'"
+                    decoration-success="status in ('completed','lobby_created')"
+                    decoration-warning="status == 'notified'"
+                    decoration-danger="status == 'cancelled'"/>
+                <field name="mode" optional="show"/>
+                <field name="agent_name"/>
+                <field name="client_name"/>
+                <field name="scheduled_at"/>
+                <field name="duration_minutes" string="Link validity (min)"/>
+                <field name="notify_by"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="groundcam_appointment_view_search" model="ir.ui.view">
+        <field name="name">groundcam.appointment.search</field>
+        <field name="model">groundcam.appointment</field>
+        <field name="arch" type="xml">
+            <search string="Video Appointments">
+                <field name="groundcam_id"/>
+                <field name="ticket_id"/>
+                <field name="agent_name"/>
+                <field name="client_name"/>
+                <filter string="Pending" name="pending"
+                    domain="[('lobby_id', '=', False)]"/>
+                <filter string="Has Session" name="has_session"
+                    domain="[('lobby_id', '!=', False)]"/>
+                <separator/>
+                <filter string="Upcoming" name="upcoming"
+                    domain="[('status', 'in', ['scheduled', 'notified'])]"/>
+                <filter string="Completed" name="completed"
+                    domain="[('status', '=', 'completed')]"/>
+                <separator/>
+                <filter string="Camera" name="mode_camera"
+                    domain="[('mode', '=', 'camera')]"/>
+                <filter string="Screen" name="mode_screen"
+                    domain="[('mode', '=', 'screen')]"/>
+                <separator/>
+                <group>
+                    <filter string="Status" name="group_status" context="{'group_by': 'status'}"/>
+                    <filter string="Mode" name="group_mode" context="{'group_by': 'mode'}"/>
+                    <filter string="Ticket" name="group_ticket" context="{'group_by': 'ticket_id'}"/>
+                    <filter string="Agent" name="group_agent" context="{'group_by': 'agent_name'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="groundcam_appointment_action" model="ir.actions.act_window">
+        <field name="name">Video Appointments</field>
+        <field name="res_model">groundcam.appointment</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="groundcam_appointment_view_search"/>
+        <field name="context">{'search_default_pending': 1}</field>
+    </record>
+</odoo>

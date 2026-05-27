@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_use_groundcam" model="res.groups">
+        <field name="name">Use GroundCam Video Support</field>
+        <field name="implied_ids" eval="[(4, ref('helpdesk.group_helpdesk_user'))]"/>
+    </record>
+
+    <data noupdate="1">
+        <!-- Manager can do everything on groundcam models -->
+        <record id="groundcam_session_manager_rule" model="ir.rule">
+            <field name="name">GroundCam Session: Manager</field>
+            <field name="model_id" ref="model_groundcam_session"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('helpdesk.group_helpdesk_manager'))]"/>
+        </record>
+
+        <!-- Users see sessions linked to tickets they can see -->
+        <record id="groundcam_session_user_rule" model="ir.rule">
+            <field name="name">GroundCam Session: User</field>
+            <field name="model_id" ref="model_groundcam_session"/>
+            <field name="domain_force">[
+                '|',
+                    ('ticket_id.team_id.privacy_visibility', '!=', 'invited_internal'),
+                    ('ticket_id.message_partner_ids', 'in', [user.partner_id.id]),
+            ]</field>
+            <field name="groups" eval="[(4, ref('helpdesk.group_helpdesk_user'))]"/>
+        </record>
+
+        <!-- Multi-company rule for sessions -->
+        <record id="groundcam_session_company_rule" model="ir.rule">
+            <field name="name">GroundCam Session: multi-company</field>
+            <field name="model_id" ref="model_groundcam_session"/>
+            <field name="domain_force">[('ticket_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <!-- Manager rule for appointments -->
+        <record id="groundcam_appointment_manager_rule" model="ir.rule">
+            <field name="name">GroundCam Appointment: Manager</field>
+            <field name="model_id" ref="model_groundcam_appointment"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('helpdesk.group_helpdesk_manager'))]"/>
+        </record>
+
+        <!-- Users see appointments linked to tickets they can see -->
+        <record id="groundcam_appointment_user_rule" model="ir.rule">
+            <field name="name">GroundCam Appointment: User</field>
+            <field name="model_id" ref="model_groundcam_appointment"/>
+            <field name="domain_force">[
+                '|',
+                    ('ticket_id.team_id.privacy_visibility', '!=', 'invited_internal'),
+                    ('ticket_id.message_partner_ids', 'in', [user.partner_id.id]),
+            ]</field>
+            <field name="groups" eval="[(4, ref('helpdesk.group_helpdesk_user'))]"/>
+        </record>
+
+        <!-- Multi-company rule for appointments -->
+        <record id="groundcam_appointment_company_rule" model="ir.rule">
+            <field name="name">GroundCam Appointment: multi-company</field>
+            <field name="model_id" ref="model_groundcam_appointment"/>
+            <field name="domain_force">[('ticket_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+
+        <!-- Manager rule for session media -->
+        <record id="groundcam_session_media_manager_rule" model="ir.rule">
+            <field name="name">GroundCam Session Media: Manager</field>
+            <field name="model_id" ref="model_groundcam_session_media"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('helpdesk.group_helpdesk_manager'))]"/>
+        </record>
+
+        <!-- Users see media linked to tickets they can see -->
+        <record id="groundcam_session_media_user_rule" model="ir.rule">
+            <field name="name">GroundCam Session Media: User</field>
+            <field name="model_id" ref="model_groundcam_session_media"/>
+            <field name="domain_force">[
+                '|',
+                    ('ticket_id.team_id.privacy_visibility', '!=', 'invited_internal'),
+                    ('ticket_id.message_partner_ids', 'in', [user.partner_id.id]),
+            ]</field>
+            <field name="groups" eval="[(4, ref('helpdesk.group_helpdesk_user'))]"/>
+        </record>
+
+        <!-- Multi-company rule for session media -->
+        <record id="groundcam_session_media_company_rule" model="ir.rule">
+            <field name="name">GroundCam Session Media: multi-company</field>
+            <field name="model_id" ref="model_groundcam_session_media"/>
+            <field name="domain_force">[('ticket_id.company_id', 'in', company_ids + [False])]</field>
+        </record>
+    </data>
+</odoo>

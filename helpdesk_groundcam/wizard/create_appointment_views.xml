@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="groundcam_create_appointment_view_form" model="ir.ui.view">
+        <field name="name">groundcam.create.appointment.form</field>
+        <field name="model">groundcam.create.appointment</field>
+        <field name="arch" type="xml">
+            <form string="Schedule Video Appointment">
+                <group>
+                    <field name="ticket_id" invisible="1"/>
+                    <field name="mode" widget="radio" options="{'horizontal': True}"/>
+                    <field name="agent_id"/>
+                    <field name="client_phone" widget="phone" placeholder="+33612345678"
+                           required="mode == 'camera'"/>
+                    <field name="client_name"/>
+                    <field name="client_email" placeholder="client@example.com"
+                           required="mode == 'screen'"/>
+                    <field name="scheduled_at" options="{'rounding': 5}"
+                        help="Select a time aligned to 5-minute intervals. You can type the time manually (e.g. 14:05)."/>
+                    <field name="duration_minutes"/>
+                    <field name="notify_by" invisible="mode == 'screen'"
+                           required="mode == 'camera'"/>
+                    <field name="notes"/>
+                </group>
+                <footer>
+                    <button name="action_schedule_appointment" type="object"
+                            string="Schedule Appointment" class="btn-primary"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

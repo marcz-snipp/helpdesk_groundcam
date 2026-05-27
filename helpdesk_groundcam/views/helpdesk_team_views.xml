@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="helpdesk_team_view_form_groundcam" model="ir.ui.view">
+        <field name="name">helpdesk.team.form.inherit.groundcam</field>
+        <field name="model">helpdesk.team</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_team_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='after-sales']" position="inside">
+                <setting help="Start video support sessions with GroundCam">
+                    <field name="use_groundcam"/>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

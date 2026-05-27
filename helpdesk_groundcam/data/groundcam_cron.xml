@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Legacy reconcile crons: replaced by the incremental sync below.
+             Kept disabled to ease rollback. -->
+        <record id="ir_cron_groundcam_reconcile_sessions" model="ir.cron">
+            <field name="name">GroundCam: Reconcile pending sessions (deprecated)</field>
+            <field name="model_id" ref="model_groundcam_session"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_reconcile_pending()</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">10</field>
+            <field name="interval_type">minutes</field>
+            <field name="active" eval="False"/>
+        </record>
+
+        <record id="ir_cron_groundcam_reconcile_appointments" model="ir.cron">
+            <field name="name">GroundCam: Reconcile pending appointments (deprecated)</field>
+            <field name="model_id" ref="model_groundcam_appointment"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_reconcile_pending()</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">10</field>
+            <field name="interval_type">minutes</field>
+            <field name="active" eval="False"/>
+        </record>
+
+        <record id="ir_cron_groundcam_incremental_sync_sessions" model="ir.cron">
+            <field name="name">GroundCam: Incremental sync of sessions</field>
+            <field name="model_id" ref="model_groundcam_session"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_incremental_sync()</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">5</field>
+            <field name="interval_type">minutes</field>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="ir_cron_groundcam_incremental_sync_appointments" model="ir.cron">
+            <field name="name">GroundCam: Incremental sync of appointments</field>
+            <field name="model_id" ref="model_groundcam_appointment"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_incremental_sync()</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">5</field>
+            <field name="interval_type">minutes</field>
+            <field name="active" eval="True"/>
+        </record>
+
+        <record id="ir_cron_groundcam_purge_webhook_deliveries" model="ir.cron">
+            <field name="name">GroundCam: Purge old webhook deliveries</field>
+            <field name="model_id" ref="model_groundcam_webhook_delivery"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_purge_old_deliveries()</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="active" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

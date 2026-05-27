@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_groundcam" model="ir.ui.view">
+        <field name="name">res.config.settings.form.inherit.groundcam</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='general_settings']" position="inside">
+                <block title="GroundCam Video Support" name="groundcam_settings">
+                    <setting string="API Configuration" help="Configure your GroundCam API credentials">
+                        <div class="content-group">
+                            <div class="row mt-2">
+                                <label class="col-lg-3 o_light_label" for="groundcam_api_key"/>
+                                <field name="groundcam_api_key" password="True" class="col-lg-4"/>
+                            </div>
+                            <div class="row mt-2">
+                                <label class="col-lg-3 o_light_label" for="groundcam_base_url"/>
+                                <field name="groundcam_base_url" class="col-lg-4"/>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-12">
+                                    <button name="action_groundcam_verify_key" type="object"
+                                            string="Verify API Key" class="btn-secondary me-2"
+                                            icon="fa-check"/>
+                                    <button name="action_groundcam_sync_agents" type="object"
+                                            string="Sync Agents" class="btn-secondary me-2"
+                                            icon="fa-refresh"/>
+                                    <button name="action_groundcam_sync_closure_types" type="object"
+                                            string="Sync Closure Types" class="btn-secondary me-2"
+                                            icon="fa-refresh"/>
+                                    <button name="action_groundcam_sync_tags" type="object"
+                                            string="Sync Tags" class="btn-secondary"
+                                            icon="fa-refresh"/>
+                                </div>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Organization Info" help="Information from GroundCam (read-only)">
+                        <div class="content-group">
+                            <div class="row mt-2">
+                                <label class="col-lg-3 o_light_label" for="groundcam_org_name"/>
+                                <field name="groundcam_org_name" class="col-lg-4"/>
+                            </div>
+                            <div class="row mt-2">
+                                <label class="col-lg-3 o_light_label" for="groundcam_credits_available"/>
+                                <field name="groundcam_credits_available" class="col-lg-4"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Webhook Configuration" help="Receive real-time updates from GroundCam">
+                        <div class="content-group">
+                            <div class="row mt-2">
+                                <label class="col-lg-3 o_light_label" for="groundcam_webhook_id"/>
+                                <field name="groundcam_webhook_id" class="col-lg-4"/>
+                            </div>
+                            <div class="row mt-2">
+                                <label class="col-lg-3 o_light_label" for="groundcam_webhook_secret"/>
+                                <field name="groundcam_webhook_secret" password="True" class="col-lg-4"/>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-7">
+                                    <button name="action_groundcam_register_webhook" type="object"
+                                            string="Register Webhook" class="btn-secondary me-2"
+                                            icon="fa-plug"/>
+                                    <button name="action_groundcam_test_webhook" type="object"
+                                            string="Test Webhook" class="btn-secondary"
+                                            icon="fa-bolt"/>
+                                </div>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="groundcam_create_session_view_form" model="ir.ui.view">
+        <field name="name">groundcam.create.session.form</field>
+        <field name="model">groundcam.create.session</field>
+        <field name="arch" type="xml">
+            <form string="Start Session">
+                <group>
+                    <field name="ticket_id" invisible="1"/>
+                    <field name="mode" widget="radio" options="{'horizontal': True}"/>
+                    <field name="agent_id"/>
+                    <field name="client_phone" widget="phone" placeholder="+33612345678"
+                           required="mode == 'camera'"/>
+                    <field name="client_name"/>
+                    <field name="client_email" placeholder="client@example.com"
+                           required="mode == 'screen' and send_email"/>
+                    <field name="language" invisible="mode == 'screen'"/>
+                    <field name="ttl_minutes"/>
+                    <field name="send_sms" invisible="mode == 'screen'"/>
+                    <field name="send_email" invisible="mode == 'camera'"/>
+                </group>
+                <footer>
+                    <button name="action_start_session" type="object"
+                            string="Start Session" class="btn-primary"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

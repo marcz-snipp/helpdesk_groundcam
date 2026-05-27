@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="groundcam_session_view_form" model="ir.ui.view">
+        <field name="name">groundcam.session.form</field>
+        <field name="model">groundcam.session</field>
+        <field name="arch" type="xml">
+            <form string="Video Session" create="false">
+                <header>
+                    <button name="action_resend_sms" type="object"
+                        string="Resend SMS" icon="fa-envelope"
+                        invisible="status != 'pending' or mode == 'screen'"/>
+                    <button name="action_open_end_wizard" type="object"
+                        string="End Session" icon="fa-stop-circle"
+                        class="btn-primary"
+                        invisible="status not in ('pending', 'active')"/>
+                    <button name="action_cancel_session" type="object"
+                        string="Cancel Session" icon="fa-times"
+                        confirm="Cancel this session? This cannot be undone."
+                        invisible="status != 'pending'"/>
+                    <field name="status" widget="statusbar"
+                        statusbar_visible="pending,active,completed"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group string="Session Info">
+                            <field name="groundcam_id"/>
+                            <field name="mode"/>
+                            <field name="source" invisible="not source"/>
+                            <field name="ticket_id"/>
+                            <field name="user_id"/>
+                            <field name="crm_id"/>
+                        </group>
+                        <group string="Participants">
+                            <field name="agent_name"/>
+                            <field name="agent_groundcam_id"/>
+                            <field name="client_name"/>
+                            <field name="client_phone"/>
+                            <field name="client_email"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Timing">
+                            <field name="create_date" string="Created"/>
+                            <field name="admitted_at" invisible="not admitted_at"/>
+                            <field name="started_at"/>
+                            <field name="ended_at"/>
+                            <field name="expires_at"/>
+                            <field name="duration_display" widget="float_time" string="Duration"/>
+                        </group>
+                        <group string="Results">
+                            <field name="client_rating"/>
+                            <field name="client_comment"/>
+                            <field name="closure_type_name"/>
+                            <field name="closure_type_id" readonly="1" invisible="not closure_type_id"/>
+                            <field name="screenshots_count"/>
+                            <field name="recordings_count"/>
+                        </group>
+                    </group>
+                    <group string="Tags">
+                        <field name="tag_ids" widget="many2many_tags"
+                            options="{'color_field': 'color'}" nolabel="1" colspan="2"/>
+                    </group>
+                    <group string="URLs">
+                        <field name="client_url" widget="url"/>
+                        <field name="agent_url" widget="url"/>
+                    </group>
+                    <notebook>
+                        <page string="Notes" name="notes_page">
+                            <field name="notes" nolabel="1"/>
+                        </page>
+                        <page string="Media" name="media_page"
+                              invisible="not media_ids">
+                            <field name="media_ids" readonly="1" nolabel="1">
+                                <list create="false" delete="false">
+                                    <field name="media_type" widget="badge"
+                                        decoration-info="media_type == 'screenshot'"
+                                        decoration-warning="media_type == 'recording'"/>
+                                    <field name="timestamp"/>
+                                    <field name="duration" optional="hide"
+                                        widget="float_time"/>
+                                    <field name="size" optional="hide"/>
+                                    <field name="latitude" optional="hide"/>
+                                    <field name="longitude" optional="hide"/>
+                                    <field name="tags" optional="show"/>
+                                    <field name="is_saved" widget="boolean_toggle"
+                                        readonly="1" string="Saved in Odoo"/>
+                                    <button name="action_refresh"
+                                        type="object" string="Refresh"
+                                        icon="fa-refresh"
+                                        help="Re-fetch metadata (tags, location) from GroundCam."/>
+                                    <button name="action_view_online"
+                                        type="object" string="View Online"
+                                        icon="fa-external-link"/>
+                                    <button name="action_save_to_odoo"
+                                        type="object" string="Save to Odoo"
+                                        icon="fa-download"
+                                        invisible="is_saved"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="groundcam_session_view_list" model="ir.ui.view">
+        <field name="name">groundcam.session.list</field>
+        <field name="model">groundcam.session</field>
+        <field name="arch" type="xml">
+            <list string="Video Sessions" create="false">
+                <field name="groundcam_id" string="Session"/>
+                <field name="ticket_id"/>
+                <field name="status" widget="badge"
+                    decoration-info="status == 'pending'"
+                    decoration-success="status == 'completed'"
+                    decoration-warning="status == 'active'"
+                    decoration-danger="status in ('cancelled','expired')"/>
+                <field name="mode" optional="show"/>
+                <field name="source" optional="hide"/>
+                <field name="agent_name"/>
+                <field name="client_name"/>
+                <field name="client_phone"/>
+                <field name="duration_display" widget="float_time" string="Duration"/>
+                <field name="tag_ids" widget="many2many_tags"
+                    options="{'color_field': 'color'}"/>
+                <field name="client_rating"/>
+                <field name="create_date" string="Created"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="groundcam_session_view_search" model="ir.ui.view">
+        <field name="name">groundcam.session.search</field>
+        <field name="model">groundcam.session</field>
+        <field name="arch" type="xml">
+            <search string="Video Sessions">
+                <field name="groundcam_id"/>
+                <field name="ticket_id"/>
+                <field name="agent_name"/>
+                <field name="client_name"/>
+                <field name="client_phone"/>
+                <field name="tag_ids"/>
+                <filter string="Active" name="active_sessions"
+                    domain="[('status', 'in', ['pending', 'active'])]"/>
+                <filter string="Completed" name="completed"
+                    domain="[('status', '=', 'completed')]"/>
+                <separator/>
+                <filter string="Camera" name="mode_camera"
+                    domain="[('mode', '=', 'camera')]"/>
+                <filter string="Screen" name="mode_screen"
+                    domain="[('mode', '=', 'screen')]"/>
+                <separator/>
+                <group>
+                    <filter string="Status" name="group_status" context="{'group_by': 'status'}"/>
+                    <filter string="Mode" name="group_mode" context="{'group_by': 'mode'}"/>
+                    <filter string="Ticket" name="group_ticket" context="{'group_by': 'ticket_id'}"/>
+                    <filter string="Agent" name="group_agent" context="{'group_by': 'agent_name'}"/>
+                    <filter string="Tag" name="group_tag" context="{'group_by': 'tag_ids'}"/>
+                    <filter string="Source" name="group_source" context="{'group_by': 'source'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_groundcam_session_media_ticket_list" model="ir.ui.view">
+        <field name="name">groundcam.session.media.list.ticket</field>
+        <field name="model">groundcam.session.media</field>
+        <field name="arch" type="xml">
+            <list string="Media" create="false" delete="false">
+                <field name="session_id"/>
+                <field name="media_type" widget="badge"
+                    decoration-info="media_type == 'screenshot'"
+                    decoration-warning="media_type == 'recording'"/>
+                <field name="timestamp"/>
+                <field name="duration" optional="hide" widget="float_time"/>
+                <field name="size" optional="hide"/>
+                <field name="latitude" optional="hide"/>
+                <field name="longitude" optional="hide"/>
+                <field name="tags" optional="show"/>
+                <field name="is_saved" widget="boolean_toggle"
+                    readonly="1" string="Saved in Odoo"/>
+                <button name="action_refresh"
+                    type="object" string="Refresh"
+                    icon="fa-refresh"
+                    help="Re-fetch metadata (tags, location) from GroundCam."/>
+                <button name="action_view_online"
+                    type="object" string="View Online"
+                    icon="fa-external-link"/>
+                <button name="action_save_to_odoo"
+                    type="object" string="Save to Odoo"
+                    icon="fa-download"
+                    invisible="is_saved"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="groundcam_session_action" model="ir.actions.act_window">
+        <field name="name">Video Sessions</field>
+        <field name="res_model">groundcam.session</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="groundcam_session_view_search"/>
+    </record>
+</odoo>

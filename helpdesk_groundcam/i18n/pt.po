@@ -1,0 +1,1856 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-17 08:51+0000\n"
+"PO-Revision-Date: 2026-05-17 08:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "%(company)s — Screen sharing invitation"
+msgstr "%(company)s — Convite para partilha de ecrã"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "%(count)s agent(s) synchronized."
+msgstr "%(count)s agente(s) sincronizado(s)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "%(count)s closure type(s) synchronized."
+msgstr "%(count)s tipo(s) de encerramento sincronizado(s)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "%(count)s tag(s) synchronized."
+msgstr "%(count)s etiqueta(s) sincronizada(s)."
+
+#. module: helpdesk_groundcam
+#. odoo-javascript
+#: code:addons/helpdesk_groundcam/static/src/js/groundcam_notification_service.js:0
+msgid "%(message)s"
+msgstr ""
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_session_view_form
+msgid "+33612345678"
+msgstr ""
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_reschedule_appointment__duration_minutes__10
+msgid "10"
+msgstr ""
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__duration_minutes__10
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__ttl_minutes__10
+msgid "10 minutes"
+msgstr "10 minutos"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_reschedule_appointment__duration_minutes__15
+msgid "15"
+msgstr ""
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__duration_minutes__15
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__ttl_minutes__15
+msgid "15 minutes"
+msgstr "15 minutos"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_reschedule_appointment__duration_minutes__20
+msgid "20"
+msgstr ""
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__duration_minutes__20
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__ttl_minutes__20
+msgid "20 minutes"
+msgstr "20 minutos"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__duration_minutes__5
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__ttl_minutes__5
+msgid "5 minutes"
+msgstr "5 minutos"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+msgid "A client email is required to schedule a screen sharing appointment."
+msgstr ""
+"É necessário um e-mail do cliente para agendar um agendamento de partilha de"
+" ecrã."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+msgid "A client phone number is required to schedule a video appointment."
+msgstr ""
+"É necessário um número de telefone do cliente para agendar uma marcação de "
+"vídeo."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "A client phone number is required to start a video session."
+msgstr ""
+"É necessário um número de telefone do cliente para iniciar uma sessão de "
+"vídeo."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "A similar request is already being processed."
+msgstr "Um pedido semelhante já está a ser processado."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "A webhook with this URL already exists."
+msgstr "Já existe um webhook com este URL."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__source__api
+msgid "API"
+msgstr "API"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "API Configuration"
+msgstr "Configuração da API"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "API key verified. Organization: %(org)s, Credits: %(credits)s"
+msgstr "Chave API verificada. Organização: %(org)s, Créditos: %(credits)s"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__active
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__status__active
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Active"
+msgstr "Ativa"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_agent__role__admin
+msgid "Admin"
+msgstr "Administrador"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__admitted_at
+msgid "Admitted At"
+msgstr "Admitido em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_agent__role__agent
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Agent"
+msgstr "Agente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__agent_duration_min
+msgid "Agent Duration (min)"
+msgstr "Duração do agente (min)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__agent_duration
+msgid "Agent Duration (s)"
+msgstr "Duração do Agente (s)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__agent_duration_sec
+msgid "Agent Duration (sec)"
+msgstr "Duração do agente (seg)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__agent_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__agent_name
+msgid "Agent Name"
+msgstr "Nome do Agente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__agent_url
+msgid "Agent URL"
+msgstr "URL do Agente"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_end_session_view_form
+msgid "Agent duration"
+msgstr "Duração do agente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__appointment_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Appointment"
+msgstr "Marcação"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+msgid "Appointment Info"
+msgstr "Informação da Marcação"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_appointment.py:0
+msgid "Appointment is already %(status)s."
+msgstr "O compromisso já está %(status)s."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_ticket__groundcam_appointment_ids
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Appointments"
+msgstr "Marcações"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Best regards,"
+msgstr "Com os melhores cumprimentos,"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__notify_by__both
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__notify_by__both
+msgid "Both"
+msgstr "Ambos"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__crm_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__crm_id
+msgid "CRM ID"
+msgstr "ID CRM"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__mode__camera
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__mode__camera
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__mode__camera
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__mode__camera
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Camera"
+msgstr "Câmera"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session.py:0
+msgid "Can only cancel pending sessions. Use \"End session\" for active ones."
+msgstr ""
+"Só é possível cancelar sessões pendentes. Use «Encerrar sessão» para as "
+"ativas."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session.py:0
+msgid "Can only end sessions that are pending or active."
+msgstr "Só é possível encerrar sessões pendentes ou ativas."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session.py:0
+msgid "Can only resend SMS for pending sessions."
+msgstr "Só é possível reenviar SMS para sessões pendentes."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_end_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_reschedule_appointment_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+msgid "Cancel Appointment"
+msgstr "Cancelar compromisso"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Cancel Session"
+msgstr "Cancelar sessão"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+msgid "Cancel this appointment? This cannot be undone."
+msgstr "Cancelar este compromisso? Esta ação não pode ser desfeita."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Cancel this session? This cannot be undone."
+msgstr "Cancelar esta sessão? Esta ação não pode ser desfeita."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__cancellation_reason
+msgid "Cancellation Reason"
+msgstr "Motivo de Cancelamento"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__status__cancelled
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__status__cancelled
+msgid "Cancelled"
+msgstr "Cancelada"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__cancelled_at
+msgid "Cancelled At"
+msgstr "Cancelado em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__cancelled_by
+msgid "Cancelled By"
+msgstr "Cancelado por"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_appointment.py:0
+msgid "Cannot reschedule a %(status)s appointment."
+msgstr "Não é possível reagendar um compromisso %(status)s."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_appointment.py:0
+msgid "Cannot reschedule an appointment that already has a session."
+msgstr "Não é possível reagendar um compromisso que já tem uma sessão."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__timestamp
+msgid "Captured At"
+msgstr "Capturado em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__zh
+msgid "Chinese"
+msgstr "Chinês"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Client"
+msgstr "Cliente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_comment
+msgid "Client Comment"
+msgstr "Comentário do Cliente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__client_duration_min
+msgid "Client Duration (min)"
+msgstr "Duração do cliente (min)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_duration
+msgid "Client Duration (s)"
+msgstr "Duração do Cliente (s)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__client_duration_sec
+msgid "Client Duration (sec)"
+msgstr "Duração do cliente (seg)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__client_email
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__client_email
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__client_email
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_email
+msgid "Client Email"
+msgstr "E-mail do Cliente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__client_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__client_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__client_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_name
+msgid "Client Name"
+msgstr "Nome do Cliente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__client_phone
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__client_phone
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__client_phone
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_phone
+msgid "Client Phone"
+msgstr "Telefone do Cliente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_rating
+msgid "Client Rating (1-5)"
+msgstr "Avaliação do Cliente (1-5)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__client_url
+msgid "Client URL"
+msgstr "URL do Cliente"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_end_session_view_form
+msgid "Client duration"
+msgstr "Duração do cliente"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Client is waiting to join the video session."
+msgstr "O cliente aguarda para entrar na sessão de vídeo."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Client rated the video session."
+msgstr "O cliente avaliou a sessão de vídeo."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__closure_type_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__closure_type_name
+msgid "Closure Type"
+msgstr "Tipo de Encerramento"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__closure_type_id
+msgid "Closure Type (Synced)"
+msgstr "Tipo de encerramento (sincronizado)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__color
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__color
+msgid "Color"
+msgstr "Cor"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Comment: %(comment)s"
+msgstr "Comentário: %(comment)s"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__status__completed
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__status__completed
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Completed"
+msgstr "Concluída"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_res_config_settings
+msgid "Config Settings"
+msgstr "Configurações"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Configure your GroundCam API credentials"
+msgstr "Configure as suas credenciais da API GroundCam"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "Could not connect to GroundCam. Please check your internet connection."
+msgstr ""
+"Não foi possível ligar ao GroundCam. Verifique a sua ligação à Internet."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session_media.py:0
+msgid ""
+"Could not retrieve a fresh URL for this media. It may have been deleted on "
+"the GroundCam side."
+msgstr ""
+"Não foi possível obter um novo URL para esta mídia. Pode ter sido eliminada "
+"no lado do GroundCam."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session_media.py:0
+msgid "Could not retrieve a fresh URL to download this media."
+msgstr "Não foi possível obter um novo URL para descarregar esta mídia."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Created"
+msgstr "Criada"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__created_by
+msgid "Created By"
+msgstr "Criado por"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__create_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__create_uid
+msgid "Created by"
+msgstr "Criado por"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__create_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__create_date
+msgid "Created on"
+msgstr "Criado em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__groundcam_credits_available
+msgid "Credits Available"
+msgstr "Créditos Disponíveis"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__source__dashboard
+msgid "Dashboard"
+msgstr "Painel"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Date: %(date)s UTC."
+msgstr "Data: %(date)s UTC."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Deleted by: %(actor)s."
+msgstr "Eliminado por: %(actor)s."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__disabled
+msgid "Disabled"
+msgstr "Desativado"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__display_name_gc
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_team__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_ticket__display_name
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nome de Apresentação"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__duration_display
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Duration"
+msgstr "Duração"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__duration_minutes
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__duration_minutes
+msgid "Duration (minutes)"
+msgstr "Duração (minutos)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__duration
+msgid "Duration (s)"
+msgstr "Duração (s)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__duration
+msgid "Duration (seconds)"
+msgstr "Duração (segundos)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,help:helpdesk_groundcam.field_groundcam_session__duration_display
+msgid "Duration in hours:minutes format"
+msgstr "Duração no formato horas:minutos"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Duration: %(minutes)sm %(seconds)ss."
+msgstr "Duração: %(minutes)smin %(seconds)ss."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__nl
+msgid "Dutch"
+msgstr "Neerlandês"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__email
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__notify_by__email
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__notify_by__email
+msgid "Email"
+msgstr "E-mail"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Email sent to %(email)s."
+msgstr "E-mail enviado para %(email)s."
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_end_session
+msgid "End GroundCam Session"
+msgstr "Encerrar sessão GroundCam"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session.py:0
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_end_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "End Session"
+msgstr "Encerrar sessão"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__ended_at
+msgid "Ended At"
+msgstr "Terminada em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__en
+msgid "English"
+msgstr "Inglês"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__event_type
+msgid "Event Type"
+msgstr "Tipo de evento"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__status__expired
+msgid "Expired"
+msgstr "Expirada"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__expires_at
+msgid "Expires At"
+msgstr "Expira em"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session_media.py:0
+msgid "Failed to download the media file: %(error)s"
+msgstr "Falha ao descarregar o ficheiro: %(error)s"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__fr
+msgid "French"
+msgstr "Francês"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__de
+msgid "German"
+msgstr "Alemão"
+
+#. module: helpdesk_groundcam
+#. odoo-javascript
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+#: code:addons/helpdesk_groundcam/static/src/js/groundcam_notification_service.js:0
+#: model:ir.ui.menu,name:helpdesk_groundcam.menu_groundcam_root
+msgid "GroundCam"
+msgstr "GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__groundcam_api_key
+msgid "GroundCam API Key"
+msgstr "Chave API GroundCam"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "GroundCam API error [%(code)s]: %(msg)s"
+msgstr "Erro da API GroundCam [%(code)s]: %(msg)s"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid ""
+"GroundCam API key is not configured. Go to Settings > GroundCam to enter "
+"your API key."
+msgstr ""
+"A chave da API GroundCam não está configurada. Aceda a Definições > "
+"GroundCam para a introduzir."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "GroundCam API request timed out. Please try again."
+msgstr "O pedido à API GroundCam expirou. Tente novamente."
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_agent
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__agent_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__agent_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_agent_view_form
+msgid "GroundCam Agent"
+msgstr "Agente GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__groundcam_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__agent_groundcam_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__agent_groundcam_id
+msgid "GroundCam Agent ID"
+msgstr "ID do Agente GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.actions.act_window,name:helpdesk_groundcam.groundcam_agent_action
+#: model:ir.ui.menu,name:helpdesk_groundcam.menu_groundcam_agents
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_agent_view_list
+msgid "GroundCam Agents"
+msgstr "Agentes GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__groundcam_id
+msgid "GroundCam Appointment ID"
+msgstr "ID de Marcação GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__groundcam_base_url
+msgid "GroundCam Base URL"
+msgstr "URL Base GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_closure_type
+msgid "GroundCam Closure Type"
+msgstr "Tipo de encerramento GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__groundcam_id
+msgid "GroundCam Closure Type ID"
+msgstr "ID do tipo de encerramento GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__delivery_id
+msgid "GroundCam Delivery ID"
+msgstr "ID de entrega GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__groundcam_id
+msgid "GroundCam Media ID"
+msgstr "ID de mídia GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__organization_id
+msgid "GroundCam Organization ID"
+msgstr "ID da organização GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__groundcam_id
+msgid "GroundCam Session ID"
+msgstr "ID de Sessão GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_session_media
+msgid "GroundCam Session Media"
+msgstr "Mídia da sessão GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_session_tag
+msgid "GroundCam Session Tag"
+msgstr "Etiqueta de Sessão GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_appointment
+msgid "GroundCam Video Appointment"
+msgstr "Marcação de Vídeo GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_session
+msgid "GroundCam Video Session"
+msgstr "Sessão de Vídeo GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_team__use_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "GroundCam Video Support"
+msgstr "Suporte Vídeo GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_webhook_delivery
+msgid "GroundCam Webhook Delivery (idempotency tracking)"
+msgstr "Entrega de webhook GroundCam (controle de idempotência)"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_sync.py:0
+msgid ""
+"GroundCam appointment no longer exists on the server (marked as cancelled "
+"locally)."
+msgstr ""
+"O agendamento GroundCam já não existe no servidor (marcado como cancelado "
+"localmente)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "GroundCam event: %(event)s"
+msgstr "Evento GroundCam: %(event)s"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session_media.py:0
+msgid "GroundCam media saved to Odoo: %(name)s"
+msgstr "Mídia GroundCam guardada no Odoo: %(name)s"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "GroundCam rate limit exceeded. Please wait a moment and try again."
+msgstr ""
+"Limite de pedidos GroundCam excedido. Aguarde um momento e tente novamente."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_sync.py:0
+msgid ""
+"GroundCam session no longer exists on the server (marked as cancelled "
+"locally)."
+msgstr ""
+"A sessão GroundCam já não existe no servidor (marcada como cancelada "
+"localmente)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_sync.py:0
+msgid ""
+"GroundCam status synchronized from API (webhook not received): %(status)s."
+msgstr ""
+"Estado GroundCam sincronizado a partir da API (webhook não recebido): "
+"%(status)s."
+
+#. module: helpdesk_groundcam
+#: model:ir.actions.server,name:helpdesk_groundcam.ir_cron_groundcam_incremental_sync_appointments_ir_actions_server
+msgid "GroundCam: Incremental sync of appointments"
+msgstr "GroundCam: sincronização incremental de compromissos"
+
+#. module: helpdesk_groundcam
+#: model:ir.actions.server,name:helpdesk_groundcam.ir_cron_groundcam_incremental_sync_sessions_ir_actions_server
+msgid "GroundCam: Incremental sync of sessions"
+msgstr "GroundCam: sincronização incremental de sessões"
+
+#. module: helpdesk_groundcam
+#: model:ir.actions.server,name:helpdesk_groundcam.ir_cron_groundcam_purge_webhook_deliveries_ir_actions_server
+msgid "GroundCam: Purge old webhook deliveries"
+msgstr "GroundCam: limpar entregas antigas de webhooks"
+
+#. module: helpdesk_groundcam
+#: model:ir.actions.server,name:helpdesk_groundcam.ir_cron_groundcam_reconcile_appointments_ir_actions_server
+msgid "GroundCam: Reconcile pending appointments (deprecated)"
+msgstr "GroundCam: reconciliar compromissos pendentes (obsoleto)"
+
+#. module: helpdesk_groundcam
+#: model:ir.actions.server,name:helpdesk_groundcam.ir_cron_groundcam_reconcile_sessions_ir_actions_server
+msgid "GroundCam: Reconcile pending sessions (deprecated)"
+msgstr "GroundCam: reconciliar sessões pendentes (obsoleto)"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+msgid "Has Session"
+msgstr "Sessão criada"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Hello %(name)s,"
+msgstr "Olá %(name)s,"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_helpdesk_team
+msgid "Helpdesk Team"
+msgstr "Equipa de Helpdesk"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_helpdesk_ticket
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__ticket_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__ticket_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__ticket_id
+msgid "Helpdesk Ticket"
+msgstr "Ticket de Suporte"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_team__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_ticket__id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__icon
+msgid "Icon"
+msgstr "Ícone"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Information from GroundCam (read-only)"
+msgstr "Informação do GroundCam (apenas leitura)"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid ""
+"Insufficient GroundCam credits (%(available)s remaining). Please purchase "
+"more credits from the GroundCam dashboard."
+msgstr ""
+"Créditos GroundCam insuficientes (%(available)s restantes). Compre mais "
+"créditos no painel GroundCam."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid ""
+"Insufficient GroundCam credits. Please purchase more credits from the "
+"GroundCam dashboard."
+msgstr ""
+"Créditos GroundCam insuficientes. Adquira mais créditos no painel do "
+"GroundCam."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid ""
+"Invalid phone number. Please use international format, e.g. +33612345678."
+msgstr ""
+"Número de telefone inválido. Por favor, utilize o formato internacional, p. "
+"ex. +33612345678."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "Invalid phone number. Use the international format, e.g. +33612345678."
+msgstr ""
+"Número de telefone inválido. Use o formato internacional, p. ex. "
+"+33612345678."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "Invalid response from GroundCam (HTTP %(status)s)"
+msgstr "Resposta inválida do GroundCam (HTTP %(status)s)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__is_active_session
+msgid "Is Active Session"
+msgstr "É uma sessão ativa"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__it
+msgid "Italian"
+msgstr "Italiano"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Join Screen Sharing Session"
+msgstr "Participar na sessão de partilha de ecrã"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Join Session"
+msgstr "Entrar na Sessão"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__joined_at
+msgid "Joined At"
+msgstr "Inscrito em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__updated_at
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__updated_at
+msgid "Last Updated (GroundCam)"
+msgstr "Última atualização (GroundCam)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__write_uid
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__write_uid
+msgid "Last Updated by"
+msgstr "Última atualização por"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__write_date
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_webhook_delivery__write_date
+msgid "Last Updated on"
+msgstr "Última atualização em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__latitude
+msgid "Latitude"
+msgstr "Latitude"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__duration_minutes
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__ttl_minutes
+msgid "Link Validity (minutes)"
+msgstr "Validade da Ligação (minutos)"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Link validity (min)"
+msgstr "Validade do link (min)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__user_id
+msgid "Linked Odoo User"
+msgstr "Utilizador Odoo Associado"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__lobby_id
+msgid "Linked Session ID"
+msgstr "ID de Sessão Associada"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__attachment_id
+msgid "Local Copy"
+msgstr "Cópia local"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__longitude
+msgid "Longitude"
+msgstr "Longitude"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,help:helpdesk_groundcam.field_groundcam_agent__user_id
+msgid "Map this GroundCam agent to an Odoo user for auto-selection"
+msgstr ""
+"Associar este agente GroundCam a um utilizador Odoo para seleção automática"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__media_ids
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_ticket__groundcam_media_ids
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.view_groundcam_session_media_ticket_list
+msgid "Media"
+msgstr "Mídias"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__mode
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__mode
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__mode
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__mode
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Mode"
+msgstr "Modo"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__name
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_agent_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_agent_view_list
+msgid "Name"
+msgstr "Nome"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_reschedule_appointment__scheduled_at
+msgid "New scheduled time"
+msgstr "Nova data agendada"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "No webhook is registered. Please register a webhook first."
+msgstr ""
+"Nenhum webhook está registado. Por favor, registe um webhook primeiro."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__notes
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__notes
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__notes
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Notes"
+msgstr "Notas"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__status__notified
+msgid "Notified"
+msgstr "Notificada"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__notified_at
+msgid "Notified At"
+msgstr "Notificado em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__notify_by
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__notify_by
+msgid "Notify By"
+msgstr "Notificar por"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__user_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__user_id
+msgid "Odoo User"
+msgstr "Utilizador Odoo"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Open GroundCam session"
+msgstr "Abrir sessão GroundCam"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Organization Info"
+msgstr "Informação da Organização"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__groundcam_org_name
+msgid "Organization Name"
+msgstr "Nome da Organização"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_agent__role__owner
+msgid "Owner"
+msgstr "Proprietário"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Participants"
+msgstr "Participantes"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__status__pending
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+msgid "Pending"
+msgstr "Pendente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__pl
+msgid "Polish"
+msgstr "Polaco"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__pt
+msgid "Portuguese"
+msgstr "Português"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Rating: %(rating)s/5."
+msgstr "Avaliação: %(rating)s/5."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.view_groundcam_session_media_ticket_list
+msgid "Re-fetch metadata (tags, location) from GroundCam."
+msgstr "Recarregar metadados (etiquetas, localização) a partir do GroundCam."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Receive real-time updates from GroundCam"
+msgstr "Receber atualizações em tempo real do GroundCam"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session_media.py:0
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session_media__media_type__recording
+msgid "Recording"
+msgstr "Gravação"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__recordings_count
+msgid "Recordings Count"
+msgstr "Número de Gravações"
+
+#. module: helpdesk_groundcam
+#. odoo-javascript
+#: code:addons/helpdesk_groundcam/static/src/js/groundcam_notification_service.js:0
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.view_groundcam_session_media_ticket_list
+msgid "Refresh"
+msgstr "Atualizar"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Register Webhook"
+msgstr "Registar Webhook"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_closure_type__require_comment
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__closure_type_require_comment
+msgid "Requires Notes"
+msgstr "Notas obrigatórias"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_reschedule_appointment_view_form
+msgid "Reschedule"
+msgstr "Reagendar"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_appointment.py:0
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_reschedule_appointment_view_form
+msgid "Reschedule Appointment"
+msgstr "Reagendar compromisso"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_reschedule_appointment
+msgid "Reschedule GroundCam Appointment"
+msgstr "Reagendar compromisso GroundCam"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Resend SMS"
+msgstr "Reenviar SMS"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,help:helpdesk_groundcam.field_groundcam_session__closure_type_id
+msgid ""
+"Resolved from closure_type_name. Empty if the type has not been synced yet."
+msgstr ""
+"Resolvido a partir de closure_type_name. Vazio se o tipo ainda não foi "
+"sincronizado."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Results"
+msgstr "Resultados"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_agent__role
+msgid "Role"
+msgstr "Função"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__ru
+msgid "Russian"
+msgstr "Russo"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__notify_by__sms
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__notify_by__sms
+msgid "SMS"
+msgstr "SMS"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__language
+msgid "SMS Language"
+msgstr "Idioma do SMS"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session.py:0
+msgid "SMS invitation resent for session %(session)s."
+msgstr "Convite SMS reenviado para a sessão %(session)s."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "SMS is not configured for your GroundCam organization."
+msgstr "O SMS não está configurado para a sua organização GroundCam."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "SMS limit reached for this session."
+msgstr "Limite de SMS atingido para esta sessão."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "SMS sent to %(phone)s."
+msgstr "SMS enviado para %(phone)s."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.view_groundcam_session_media_ticket_list
+msgid "Save to Odoo"
+msgstr "Guardar no Odoo"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__is_saved
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.view_groundcam_session_media_ticket_list
+msgid "Saved in Odoo"
+msgstr "Guardado no Odoo"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_appointment_view_form
+msgid "Schedule Appointment"
+msgstr "Agendar Marcação"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Schedule Video"
+msgstr "Agendar Vídeo"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/helpdesk_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_appointment_view_form
+msgid "Schedule Video Appointment"
+msgstr "Agendar Marcação de Vídeo"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_create_appointment
+msgid "Schedule a GroundCam Video Appointment"
+msgstr "Agendar uma Marcação de Vídeo GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__status__scheduled
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__source__scheduled
+msgid "Scheduled"
+msgstr "Agendada"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Scheduled Appointments"
+msgstr "Marcações Agendadas"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__scheduled_at
+msgid "Scheduled At"
+msgstr "Agendada para"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__scheduled_at
+msgid "Scheduled Date & Time"
+msgstr "Data e Hora Agendada"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/reschedule_appointment.py:0
+msgid "Scheduled time must be aligned to a 5-minute slot."
+msgstr "A data agendada deve estar alinhada com um intervalo de 5 minutos."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__mode__screen
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session__mode__screen
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Screen"
+msgstr "Ecrã"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_appointment__mode__screen
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__mode__screen
+msgid "Screen Sharing"
+msgstr "Partilha de ecrã"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+msgid "Screen sharing appointment scheduled for %(date)s (%(duration)s min)."
+msgstr ""
+"Agendamento de partilha de ecrã marcado para %(date)s (%(duration)s min)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Screen sharing session started."
+msgstr "Sessão de partilha de ecrã iniciada."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/groundcam_session_media.py:0
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_session_media__media_type__screenshot
+msgid "Screenshot"
+msgstr "Captura de ecrã"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__screenshots_count
+msgid "Screenshots Count"
+msgstr "Número de Capturas de Ecrã"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_appointment_view_form
+msgid ""
+"Select a time aligned to 5-minute intervals. You can type the time manually "
+"(e.g. 14:05)."
+msgstr ""
+"Selecione uma hora alinhada com intervalos de 5 minutos. Pode introduzir a "
+"hora manualmente (p. ex. 14:05)."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__send_sms
+msgid "Send SMS to client"
+msgstr "Enviar SMS ao cliente"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__send_email
+msgid "Send link by email"
+msgstr "Enviar link por e-mail"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_end_session__session_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__session_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Session"
+msgstr "Sessão"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_appointment__status__lobby_created
+msgid "Session Created"
+msgstr "Sessão Criada"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Session Info"
+msgstr "Informação da Sessão"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__notes
+msgid "Session Notes"
+msgstr "Notas da Sessão"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Sessions"
+msgstr "Sessões"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__size
+msgid "Size (bytes)"
+msgstr "Tamanho (bytes)"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__source
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Source"
+msgstr "Fonte"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__appointment_id
+msgid "Source Appointment"
+msgstr "Compromisso de origem"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_create_session__language__es
+msgid "Spanish"
+msgstr "Espanhol"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/helpdesk_ticket.py:0
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Start Session"
+msgstr "Iniciar sessão"
+
+#. module: helpdesk_groundcam
+#: model:ir.model,name:helpdesk_groundcam.model_groundcam_create_session
+msgid "Start a GroundCam Session"
+msgstr "Iniciar uma sessão GroundCam"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_team_view_form_groundcam
+msgid "Start video support sessions with GroundCam"
+msgstr "Iniciar sessões de suporte por vídeo com GroundCam"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__started_at
+msgid "Started At"
+msgstr "Iniciada em"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_appointment__status
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__status
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Status"
+msgstr "Estado"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Sync Agents"
+msgstr "Sincronizar Agentes"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Sync Closure Types"
+msgstr "Sincronizar tipos de encerramento"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Sync Tags"
+msgstr "Sincronizar etiquetas"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_tag__name
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Tag"
+msgstr "Etiqueta"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session__tag_ids
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__tags
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Test Webhook"
+msgstr "Testar Webhook"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,help:helpdesk_groundcam.field_groundcam_session__user_id
+msgid "The Odoo user who initiated this session"
+msgstr "O utilizador Odoo que iniciou esta sessão"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "The agent is no longer a member of your GroundCam organization."
+msgstr "O agente já não é membro da sua organização GroundCam."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+msgid ""
+"The appointment time must be aligned to 5-minute intervals (e.g. 14:00, "
+"14:05, 14:10)."
+msgstr ""
+"A hora da marcação deve estar alinhada com intervalos de 5 minutos (p. ex. "
+"14:00, 14:05, 14:10)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/end_session.py:0
+msgid "The selected closure type requires notes."
+msgstr "O tipo de encerramento selecionado requer notas."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid ""
+"The system parameter 'web.base.url' is not set. Please configure it first."
+msgstr ""
+"O parâmetro de sistema 'web.base.url' não está definido. Por favor, "
+"configure-o primeiro."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "This GroundCam agent account is disabled."
+msgstr "Esta conta de agente GroundCam está desativada."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "This GroundCam role is not allowed to create sessions."
+msgstr "Este perfil GroundCam não tem permissão para criar sessões."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "This link expires at %(time)s."
+msgstr "Este link expira às %(time)s."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_appointment__ticket_id
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_create_session__ticket_id
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Timing"
+msgstr "Temporização"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid "Too many authentication URL generations (limit: 5 per hour)."
+msgstr "Demasiadas gerações de URL de autenticação (limite: 5 por hora)."
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_groundcam_session_media__media_type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "URLs"
+msgstr "URLs"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid ""
+"Unknown closure type on GroundCam side. Resynchronize closure types from the"
+" settings."
+msgstr ""
+"Tipo de encerramento desconhecido no GroundCam. Ressincronize os tipos de "
+"encerramento nas definições."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+msgid "Upcoming"
+msgstr "Próximas"
+
+#. module: helpdesk_groundcam
+#: model:res.groups,name:helpdesk_groundcam.group_use_groundcam
+msgid "Use GroundCam Video Support"
+msgstr "Utilizar Suporte Vídeo GroundCam"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Verify API Key"
+msgstr "Verificar Chave API"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_form
+msgid "Video Appointment"
+msgstr "Marcação de Vídeo"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/helpdesk_ticket.py:0
+#: model:ir.actions.act_window,name:helpdesk_groundcam.groundcam_appointment_action
+#: model:ir.ui.menu,name:helpdesk_groundcam.menu_groundcam_appointments
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_appointment_view_search
+msgid "Video Appointments"
+msgstr "Marcações de Vídeo"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+msgid "Video Session"
+msgstr "Sessão de Vídeo"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/helpdesk_ticket.py:0
+msgid "Video Session Media"
+msgstr "Mídia da sessão de vídeo"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/helpdesk_ticket.py:0
+#: model:ir.actions.act_window,name:helpdesk_groundcam.groundcam_session_action
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_helpdesk_ticket__groundcam_session_ids
+#: model:ir.ui.menu,name:helpdesk_groundcam.menu_groundcam_sessions
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_list
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_search
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+msgid "Video Sessions"
+msgstr "Sessões de Vídeo"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_appointment.py:0
+msgid "Video appointment scheduled for %(date)s (%(duration)s min)."
+msgstr "Marcação de vídeo agendada para %(date)s (%(duration)s min)."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video appointment was cancelled."
+msgstr "Agendamento de vídeo cancelado."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video appointment was created."
+msgstr "Agendamento de vídeo criado."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video appointment was updated."
+msgstr "Agendamento de vídeo atualizado."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session completed."
+msgstr "Sessão de vídeo concluída."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session created."
+msgstr "Sessão de vídeo criada."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session is now active."
+msgstr "A sessão de vídeo está agora ativa."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session link has expired."
+msgstr "O link da sessão de vídeo expirou."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid "Video session started."
+msgstr "Sessão de vídeo iniciada."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session was cancelled."
+msgstr "Sessão de vídeo cancelada."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session was deleted."
+msgstr "Sessão de vídeo eliminada."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/controllers/webhook.py:0
+msgid "Video session was updated."
+msgstr "Sessão de vídeo atualizada."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_session_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.helpdesk_ticket_view_form_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.view_groundcam_session_media_ticket_list
+msgid "View Online"
+msgstr "Ver online"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields.selection,name:helpdesk_groundcam.selection__groundcam_agent__role__viewer
+msgid "Viewer"
+msgstr "Visualizador"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.res_config_settings_view_form_groundcam
+msgid "Webhook Configuration"
+msgstr "Configuração do Webhook"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__groundcam_webhook_id
+msgid "Webhook ID"
+msgstr "ID do Webhook"
+
+#. module: helpdesk_groundcam
+#: model:ir.model.fields,field_description:helpdesk_groundcam.field_res_config_settings__groundcam_webhook_secret
+msgid "Webhook Secret"
+msgstr "Segredo do Webhook"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "Webhook registered successfully at %(url)s"
+msgstr "Webhook registado com sucesso em %(url)s"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/res_config_settings.py:0
+msgid "Webhook test sent successfully."
+msgstr "Teste do webhook enviado com sucesso."
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/wizard/create_session.py:0
+msgid ""
+"You have been invited to a screen sharing session. Click the button below to"
+" join:"
+msgstr ""
+"Foi convidado para uma sessão de partilha de ecrã. Clique no botão abaixo "
+"para participar:"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/services/groundcam_api.py:0
+msgid ""
+"Your GroundCam organization could not be found. Check the API key "
+"configuration."
+msgstr ""
+"Não foi possível encontrar a sua organização GroundCam. Verifique a "
+"configuração da chave da API."
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_appointment_view_form
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_create_session_view_form
+msgid "client@example.com"
+msgstr ""
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_end_session_view_form
+msgid "min"
+msgstr "min"
+
+#. module: helpdesk_groundcam
+#: model_terms:ir.ui.view,arch_db:helpdesk_groundcam.groundcam_end_session_view_form
+msgid "sec"
+msgstr "s"
+
+#. module: helpdesk_groundcam
+#. odoo-python
+#: code:addons/helpdesk_groundcam/models/helpdesk_ticket.py:0
+msgid "ticket_id"
+msgstr ""

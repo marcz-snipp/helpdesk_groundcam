@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="helpdesk_ticket_view_form_groundcam" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.form.inherit.groundcam</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk.helpdesk_ticket_view_form"/>
+        <field name="arch" type="xml">
+
+            <!-- Hidden helper fields -->
+            <xpath expr="//field[@name='team_privacy_visibility']" position="after">
+                <field name="use_groundcam" invisible="1"/>
+                <field name="groundcam_active_session_id" invisible="1"/>
+            </xpath>
+
+            <!-- Header buttons -->
+            <xpath expr="//header" position="inside">
+                <button class="btn btn-secondary" name="action_start_groundcam_session"
+                    type="object" string="Start Session"
+                    icon="fa-video-camera"
+                    invisible="not use_groundcam or groundcam_active_session_id"/>
+                <button class="btn btn-secondary" name="action_schedule_groundcam_appointment"
+                    type="object" string="Schedule Video"
+                    icon="fa-calendar"
+                    invisible="not use_groundcam"/>
+                <button class="btn btn-primary" name="action_open_groundcam_agent_url"
+                    type="object" string="Join Session"
+                    icon="fa-video-camera"
+                    invisible="not groundcam_active_session_id"/>
+            </xpath>
+
+            <!-- Stat buttons -->
+            <xpath expr="//button[@name='action_open_helpdesk_ticket']" position="before">
+                <button class="oe_stat_button" name="action_view_groundcam_sessions"
+                    type="object" icon="fa-video-camera"
+                    invisible="groundcam_session_count == 0">
+                    <field string="Sessions" name="groundcam_session_count" widget="statinfo"/>
+                </button>
+                <button class="oe_stat_button" name="action_view_groundcam_appointments"
+                    type="object" icon="fa-calendar"
+                    invisible="groundcam_appointment_count == 0">
+                    <field string="Appointments" name="groundcam_appointment_count" widget="statinfo"/>
+                </button>
+                <button class="oe_stat_button" name="action_view_groundcam_media"
+                    type="object" icon="fa-camera"
+                    invisible="groundcam_media_count == 0">
+                    <field string="Media" name="groundcam_media_count" widget="statinfo"/>
+                </button>
+            </xpath>
+
+            <!-- Notebook page for session details -->
+            <xpath expr="//page[@name='description']" position="after">
+                <page string="Video Sessions" name="groundcam_sessions"
+                      invisible="not use_groundcam">
+                    <field name="groundcam_session_ids" readonly="1">
+                        <list>
+                            <field name="groundcam_id" string="Session"/>
+                            <field name="status" widget="badge"
+                                decoration-info="status == 'pending'"
+                                decoration-success="status == 'completed'"
+                                decoration-warning="status == 'active'"
+                                decoration-danger="status in ('cancelled','expired')"/>
+                            <field name="mode" optional="hide"/>
+                            <field name="agent_name"/>
+                            <field name="client_name"/>
+                            <field name="client_phone"/>
+                            <field name="duration_display" widget="float_time" string="Duration"/>
+                            <field name="client_rating"/>
+                            <field name="screenshots_count"/>
+                            <field name="create_date" string="Created"/>
+                        </list>
+                    </field>
+                    <separator string="Scheduled Appointments"/>
+                    <field name="groundcam_pending_appointment_ids" readonly="1">
+                        <list>
+                            <field name="groundcam_id" string="Appointment"/>
+                            <field name="status" widget="badge"
+                                decoration-info="status == 'scheduled'"
+                                decoration-success="status in ('completed','lobby_created')"
+                                decoration-warning="status == 'notified'"
+                                decoration-danger="status == 'cancelled'"/>
+                            <field name="mode" optional="hide"/>
+                            <field name="agent_name"/>
+                            <field name="scheduled_at"/>
+                            <field name="duration_minutes" string="Link validity (min)"/>
+                            <field name="notify_by"/>
+                        </list>
+                    </field>
+                </page>
+                <page string="Media" name="groundcam_media"
+                      invisible="not use_groundcam">
+                    <field name="groundcam_media_ids" readonly="1" nolabel="1">
+                        <list create="false" delete="false">
+                            <field name="session_id"/>
+                            <field name="media_type" widget="badge"
+                                decoration-info="media_type == 'screenshot'"
+                                decoration-warning="media_type == 'recording'"/>
+                            <field name="timestamp"/>
+                            <field name="duration" optional="hide"
+                                widget="float_time"/>
+                            <field name="size" optional="hide"/>
+                            <field name="latitude" optional="hide"/>
+                            <field name="longitude" optional="hide"/>
+                            <field name="tags" optional="show"/>
+                            <field name="is_saved" widget="boolean_toggle"
+                                readonly="1" string="Saved in Odoo"/>
+                            <button name="action_refresh"
+                                type="object" string="Refresh"
+                                icon="fa-refresh"
+                                help="Re-fetch metadata (tags, location) from GroundCam."/>
+                            <button name="action_view_online"
+                                type="object" string="View Online"
+                                icon="fa-external-link"/>
+                            <button name="action_save_to_odoo"
+                                type="object" string="Save to Odoo"
+                                icon="fa-download"
+                                invisible="is_saved"/>
+                        </list>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
